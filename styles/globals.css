@@ -41,7 +41,7 @@ main,h3 {
 	        animation: scale-up-left .7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
-nav li,a,.title{
+nav li,nav a,.title{
  font-family: 'Open Sans Condensed', sans-serif;
  margin: 5px 1px;
 }
@@ -53,6 +53,7 @@ blockquote{
 
 .title{
  padding: 10px;
+ 
 }
 .title-muted{
   color: #777;
