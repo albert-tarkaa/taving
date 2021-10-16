@@ -6,9 +6,9 @@ const Header = ({ title, home, about, blog }) => {
   return (
     <div>
       <Head>
-        <title>Tavi</title>
-        <meta name='description' content='' />
-        <meta name='keywords' content='' />
+        <title>Albert Tarkaa</title>
+        <meta name='description' content='Check out my portfolio here' />
+        <meta name='keywords' content='Albert Tarkaa NextJS ReactJS Portfolio' />
       </Head>
       <nav>
         <ul>
