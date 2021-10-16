@@ -7,8 +7,10 @@ const Header = ({ title, home, about, blog }) => {
     <div>
       <Head>
         <title>Albert Tarkaa</title>
-        <meta name='description' content='Check out my portfolio here' />
+        <meta name='description' content='Check out my portfolio built with NextJS' />
         <meta name='keywords' content='Albert Tarkaa NextJS ReactJS Portfolio' />
+        <meta name='author' content='Albert Tarkaa' />
+        <meta property='og:type' content='website' />
       </Head>
       <nav>
         <ul>
