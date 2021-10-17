@@ -11,6 +11,7 @@ const Header = ({ title, home, about, blog }) => {
         <meta name='keywords' content='Albert Tarkaa NextJS ReactJS Portfolio' />
         <meta name='author' content='Albert Tarkaa' />
         <meta property='og:type' content='website' />
+        <meta name='google-site-verification' content='p5kfwl_U5MSgwzljChwGRFGQpvlZHgsyE7n1Lki_4XM' />
       </Head>
       <nav>
         <ul>
