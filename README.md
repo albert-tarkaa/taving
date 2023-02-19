@@ -2,4 +2,4 @@
 
 This is my portfolio, bootstrapped with [Next.js](https://nextjs.org/).
 
-Currently available here: (https://tavi.netlify.app/)
+Currently available here: (https://tarkaa.ng)
