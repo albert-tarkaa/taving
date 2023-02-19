@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Merriweather&family=Poppins&display=swap');
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 body {
-  font-family: 'Handlee', serif;
+  font-family: 'Merriweather', serif;
   width: 1100px;
   margin: 0 auto;
   color: black;
@@ -16,8 +16,8 @@ body {
 }
 
 .container {
-    margin: 10px;
-    padding: 10px;
+  margin: 10px;
+  padding: 10px;
 }
 
 
@@ -27,97 +27,82 @@ a {
 }
 
 .active {
-  color:#777
+  color: #777
 }
 
-h2{
+h2 {
   font-size: 3rem;
 }
 
-main,h3 {
+main, h3 {
   font-size: 2rem;
   margin: 5px;
-	-webkit-animation: scale-up-left .7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-left .7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  -webkit-animation: scale-up-left .7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-left .7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
-nav li,nav a,.title{
- font-family: 'Open Sans Condensed', sans-serif;
- margin: 5px 1px;
+.title a {
+  font-size: 2.5rem;
+  cursor: pointer;
 }
 
-blockquote{
-   color:#4b4a4a;
-    line-height: 1.7;
+nav li, nav a, .title {
+  font-family: 'Merriweather', sans-serif;
+  margin: 5px 1px;
 }
 
-.title{
- padding: 10px;
- 
+blockquote,p {
+  line-height: 1.7;
+  padding: 5px;
 }
-.title-muted{
+
+.title {
+  padding: 10px;
+
+}
+
+.title-muted {
   color: #777;
-  font-size: 1rem;
+  font-size: 3rem;
   line-height: 2;
-  font-family: 'Handlee', cursive;
+  font-family: 'Babylonica', cursive;
 }
 
-ul{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: flex-end;
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: flex-end;
 }
 
-li{
+li {
   margin: 10px 2px;
   padding: 0 5px;
 }
 
 @media (max-width: 600px) {
-  *{
-    font-size: 2rem;
+  * {
+    font-size: 1.7rem;
   }
-  .container{
-     padding: 10px 20px;
+
+  .container {
+    padding: 10px 50px;
+
   }
-  ul{
+
+  ul {
     flex-direction: column;
     align-items: flex-end;
     margin: 20px;
   }
-}
 
-/**
- * ----------------------------------------
- * animation scale-up-left
- * ----------------------------------------
- */
-@-webkit-keyframes scale-up-left {
-  0% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-    -webkit-transform-origin: 0% 50%;
-            transform-origin: 0% 50%;
+  .title {
+    font-size: 3rem;
+    margin: 30px;
+    padding: 10px 50px;
   }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform-origin: 0% 50%;
-            transform-origin: 0% 50%;
-  }
-}
-@keyframes scale-up-left {
-  0% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-    -webkit-transform-origin: 0% 50%;
-            transform-origin: 0% 50%;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform-origin: 0% 50%;
-            transform-origin: 0% 50%;
+
+  .title, .title a {
+    font-size: 3rem;
   }
 }

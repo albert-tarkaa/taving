@@ -3,7 +3,7 @@ import Header from '../components/Header';
 const Blog = () => {
   return (
     <>
-      <Header title='blog' blog='blog' />
+      <Header title='Blog' blog='blog' />
 
       <div className='container'>
         <main className='main'>

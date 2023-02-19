@@ -1,0 +1,35 @@
+.description{
+  font-size: 1rem;
+}
+
+.title{
+ padding: 5px;
+ font-size: 4rem;
+}
+
+.container{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+  padding: 10px 20px;
+  height: 90vh;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@media (max-width: 600px) {
+  .container{
+    font-size: 1.7rem;
+     padding: 10px 50px;
+  }
+  .title{
+    font-size: 3rem;
+    margin: 20px;
+  }
+}

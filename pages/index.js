@@ -1,22 +1,24 @@
-import Header from '../components/Header';
+import { NavLink } from '../components/NavLink';
+import { Meta } from '../components/Meta';
+import styles from '../styles/Index.module.css';
 
-export default function Home() {
+export default function Home({ title, home, about, blog, portfolio })
+{
   return (
-    <>
-      <Header title='intro' home='home' />
+    <div className={styles.container}>
+      <Meta />
+      <h3 className={styles.title}>
+        Albert Tarkaa <span className='title-muted'> - Web Developer</span>
+      </h3>
+      <nav>
+        <ul className={styles.nav}>
+          <NavLink href='/about' active={about}>About</NavLink>
+          <NavLink href='/portfolio' active={portfolio}>Portfolio</NavLink>
+          <NavLink href='/blog' active={blog}>Blog</NavLink>
+        </ul>
+      </nav>
 
-      <div className='container'>
-        <main className='main'>
-          <blockquote className='description'>
-           { `"I wish it need not have happened in my time," said Frodo. "So do I," said Gandalf, "and so do all who live
-            to see such times. But that is not for them to decide. All we have to decide is what to do with the time
-            that is given us.”`}
-          </blockquote>
-          <cite>― J.R.R. Tolkien, The Fellowship of the Ring</cite>
-        </main>
-
-        <footer className='footer'></footer>
-      </div>
-    </>
+      <footer className='footer'></footer>
+    </div>
   );
 }
