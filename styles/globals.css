@@ -51,7 +51,7 @@ nav li, nav a, .title {
   margin: 5px 1px;
 }
 
-blockquote,p {
+blockquote, p {
   line-height: 1.7;
   padding: 5px;
 }
@@ -68,8 +68,8 @@ blockquote,p {
   font-family: 'Comforter Brush', cursive;
 }
 
-.title-muted a:hover{
- color: #C4AEAD;
+.title-muted a:hover {
+  color: #C4AEAD;
 }
 
 ul {
@@ -84,13 +84,39 @@ li {
   padding: 0 5px;
 }
 
+.footer {
+  position: absolute;
+  /* bottom: 1rem; */
+  font-size: 1rem;
+  padding: 30px;
+}
+
+.footer-index {
+    position: absolute;
+    bottom: 1rem;
+    font-size: 1rem;
+  }
+
 @media (max-width: 600px) {
   * {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
+  }
+  
+.footer {
+  position: absolute;
+  /* bottom: 1rem; */
+  font-size: .8rem;
+  padding: 30px;
+}
+
+.footer-index {
+    position: absolute;
+    bottom: 1rem;
+    font-size: .8rem;
   }
 
   .container {
-    padding: 10px 50px;
+    padding: 10px 30px;
 
   }
 
@@ -109,7 +135,8 @@ li {
   .title, .title a {
     font-size: 3rem;
   }
-  .title-muted{
+
+  .title-muted {
     font-size: 2rem;
   }
 }

@@ -1,3 +1,4 @@
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 
 const About = () => {
@@ -17,9 +18,8 @@ const About = () => {
           </blockquote>
           <cite>― J.R.R. Tolkien, The Two Towers</cite>
         </main>
-
-        <footer className='footer'></footer>
       </div>
+      <Footer/>
     </>
   );
 };

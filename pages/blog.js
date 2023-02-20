@@ -1,3 +1,4 @@
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 
 const Blog = () => {
@@ -17,9 +18,8 @@ const Blog = () => {
           </blockquote>
           <cite>― Rustin Cohle, True Detective</cite>
         </main>
-
-        <footer className='footer'></footer>
       </div>
+      <Footer/>
     </>
   );
 };

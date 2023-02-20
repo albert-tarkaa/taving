@@ -1,9 +1,11 @@
 import { NavLink } from '../components/NavLink';
 import { Meta } from '../components/Meta';
 import styles from '../styles/Index.module.css';
+import Footer from '../components/Footer';
 
-export default function Home({ title, home, about, blog, portfolio })
+export default function Home({ title, about, blog, portfolio })
 {
+  const home='home'
   return (
     <div className={styles.container}>
       <Meta />
@@ -17,8 +19,9 @@ export default function Home({ title, home, about, blog, portfolio })
           <NavLink href='/blog' active={blog}>Blog</NavLink>
         </ul>
       </nav>
-
-      <footer className='footer'></footer>
+      <div className={styles.footer}>
+        <Footer home={home}/>
+      </div>
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 
 const Portfolio = () =>
@@ -14,9 +15,8 @@ Pain is a part of life. Sometimes it's a big part, and sometimes it isn't, but e
                     </div>
                     <cite>―Jim Butcher, The Dresden Files</cite>
                 </main>
-
-                <footer className='footer'></footer>
             </div>
+            <Footer/>
         </>
     );
 };
