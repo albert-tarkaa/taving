@@ -84,18 +84,22 @@ li {
   padding: 0 5px;
 }
 
-.footer {
-  position: absolute;
-  /* bottom: 1rem; */
-  font-size: 1rem;
-  padding: 30px;
-}
+
 
 .footer-index {
     position: absolute;
-    bottom: 1rem;
+    bottom: 3rem;
     font-size: 1rem;
   }
+
+@media (min-width: 601px) {
+.footer {
+  position: absolute;
+  bottom: 3rem;
+  font-size: 1rem;
+  padding: 30px;
+}
+}
 
 @media (max-width: 600px) {
   * {
@@ -111,7 +115,7 @@ li {
 
 .footer-index {
     position: absolute;
-    bottom: 1rem;
+    bottom: 3rem;
     font-size: .8rem;
   }
 
