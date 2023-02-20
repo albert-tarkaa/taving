@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Merriweather&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Merriweather&family=Poppins&display=swap');
 
 * {
   box-sizing: border-box;
@@ -62,10 +62,14 @@ blockquote,p {
 }
 
 .title-muted {
-  color: #777;
+  color: #111111;
   font-size: 3rem;
   line-height: 2;
-  font-family: 'Babylonica', cursive;
+  font-family: 'Comforter Brush', cursive;
+}
+
+.title-muted a:hover{
+ color: #C4AEAD;
 }
 
 ul {
@@ -92,7 +96,7 @@ li {
 
   ul {
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     margin: 20px;
   }
 
@@ -104,5 +108,8 @@ li {
 
   .title, .title a {
     font-size: 3rem;
+  }
+  .title-muted{
+    font-size: 2rem;
   }
 }

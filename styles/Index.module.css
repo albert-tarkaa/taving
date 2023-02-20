@@ -35,6 +35,9 @@
 
   .title {
     font-size: 3rem;
-    margin: 20px;
+    /* margin: 20px; */
+  }
+  .title-muted{
+    font-size: 2rem;
   }
 }

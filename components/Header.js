@@ -8,7 +8,7 @@ const Header = ({ title, home, about, blog }) => {
       <Meta />
       
       <h3 className='title'>
-        <Link href='/'>Albert Tarkaa</Link> <span className='title-muted'> - {title}</span>
+        <p className='title-muted'><Link href='/'>../ </Link>{title}</p>
       </h3>
     </div>
   );
