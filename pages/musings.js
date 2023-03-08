@@ -22,7 +22,7 @@ const Musings = () =>
                     </p>
                     <p>#</p>
                     <p>
-                        I don't think I would like it in the ground
+                        I don&apos;t think I would like it in the ground
                         The earth gives but it also takes more
                         Always taking, stoic, and entitled
                         I would love to feel the wind as my ashes fly away
