@@ -3,7 +3,7 @@ import { Meta } from '../components/Meta';
 import styles from '../styles/Index.module.css';
 import Footer from '../components/Footer';
 
-export default function Home({ title, about, blog, portfolio })
+export default function Home({ title, about, blog, portfolio,musings })
 {
   const home='home'
   return (
@@ -17,6 +17,7 @@ export default function Home({ title, about, blog, portfolio })
           <NavLink href='/about' active={about}>About</NavLink>
           <NavLink href='/portfolio' active={portfolio}>Portfolio</NavLink>
           <NavLink href='/blog' active={blog}>Blog</NavLink>
+          <NavLink href='/musings' active={musings}>Musings - Poetry and stuff</NavLink>
         </ul>
       </nav>
       <div className={styles.footer}>

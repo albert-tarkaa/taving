@@ -4,7 +4,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-size: 16px;
 }
 
 body {
@@ -12,7 +11,7 @@ body {
   /* width: 1100px; */
   margin: 0 auto;
   color: black;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .container {
@@ -31,11 +30,11 @@ a {
 }
 
 h2 {
-  font-size: 3rem;
+  /* font-size: 3rem; */
 }
 
 main, h3 {
-  font-size: 2rem;
+  /* font-size: 1rem; */
   margin: 5px;
   -webkit-animation: scale-up-left .7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   animation: scale-up-left .7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
