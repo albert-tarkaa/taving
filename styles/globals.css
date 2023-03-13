@@ -1,7 +1,7 @@
 /* Base styles */
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Merriweather&family=Poppins&display=swap');
 
-  *{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -15,11 +15,6 @@ body {
   font-family: 'Merriweather', serif;
   margin: 0 auto;
   color: black;
-}
-
-.container {
-  margin: 1rem;
-  padding: 1rem;
 }
 
 a {
@@ -41,12 +36,18 @@ main {
   cursor: pointer;
 }
 
-nav li, nav a, .title {
+nav li,
+nav a,
+.title {
   font-family: 'Merriweather', sans-serif;
   margin: 0.5rem 0.1rem;
 }
 
-blockquote, p {
+p {
+  padding: 0.5rem 0;
+}
+
+.description {
   line-height: 1.7;
   padding: 0.5rem;
 }
@@ -89,15 +90,12 @@ li {
   html {
     font-size: 14px;
   }
-
-  .container {
-    padding: 1rem;
-  }
   main {
-  padding: 0;
-}
+    padding: 0;
+  }
 
-  .footer, .footer-index {
+  .footer,
+  .footer-index {
     position: absolute;
     bottom: 3rem;
     font-size: 0.8rem;

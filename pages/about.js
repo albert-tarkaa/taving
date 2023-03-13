@@ -1,22 +1,29 @@
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import Link from 'next/link'
 
-const About = () => {
+const About = () =>
+{
   return (
     <>
       <Header title='About' about='about' />
 
       <div className='container'>
         <main className='main'>
-          <blockquote className='description'>
-            {`"I am not going to tell you my name, not yet at any rate.' A queer half-knowing, half-humorous look came with
-        a green flicker into his eyes. 'For one thing it would take a long while: my name is growing all the time,
-        and I've lived a very long, long time; so my name is like a story. Real names tell you the story of things
-        they belong to in my language, in the Old Entish as you might say. It is a lovely language, but it takes a
-        very long time saying anything in it, because we do not say anything in it, unless it is worth taking a long
-        time to say, and to listen to.”`}
-          </blockquote>
-          <cite>― J.R.R. Tolkien, The Two Towers</cite>
+          <div className='description'>
+            <p>Hi there! I'm Albert, a software engineer with a passion for creating beautiful, accessibility-compliant, and functional web applications. I have over 5 years of experience in frontend development using ReactJS, NextJS, JavaScript, and TypeScript. I'm currently leading a team of super-talented developers at <Link href='www.tenece.com'>Tenece Professional Services</Link>, where we deliver innovative solutions for clients across various industries.</p>
+
+            <p>
+              I love learning new technologies and sharing my knowledge with others. On my personal website, you can find my portfolio of projects, blog posts on various topics related to web development, and poetry collection that expresses my creative side.</p>
+
+            <p>
+              When I'm not coding or reading, I enjoy traveling, movies, and gaming. I also volunteer at Genesys Tech Hub with the Codename: Learnable and CodeVille programs. I'm always open to new opportunities and challenges that can help me grow as a developer and a person.
+            </p>
+            <p>
+              Feel free to connect with me if you want to chat about anything related to web development or poetry. I'd love to hear from you!
+
+              I am curious about how all things work.</p>
+          </div>
         </main>
       </div>
       {/* <Footer/> */}
