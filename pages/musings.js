@@ -31,7 +31,7 @@ const Musings = () =>
 </p>
                 </main>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 };

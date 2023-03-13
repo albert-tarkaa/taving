@@ -19,7 +19,7 @@ const Blog = () => {
           <cite>― Rustin Cohle, True Detective</cite>
         </main>
       </div>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 };

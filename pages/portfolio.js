@@ -16,7 +16,7 @@ Pain is a part of life. Sometimes it's a big part, and sometimes it isn't, but e
                     <cite>―Jim Butcher, The Dresden Files</cite>
                 </main>
             </div>
-            <Footer/>
+            {/* <Footer/> */}
         </>
     );
 };

@@ -19,7 +19,7 @@ const About = () => {
           <cite>― J.R.R. Tolkien, The Two Towers</cite>
         </main>
       </div>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 };
