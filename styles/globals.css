@@ -66,6 +66,11 @@ p {
   padding: 1rem 12rem;
 }
 
+.publised{
+  color: gray;
+  font-size: .8rem;
+}
+
 .title-muted {
   color: #16161d;
   font-size: 3rem;
