@@ -22,6 +22,7 @@ const About = () =>
               Feel free to connect with me if you want to chat about anything related to web development, AI, Big History, Fantasy novels, Christianity, Voluteering, Poetry and basically anything. I&apos;d love to hear from you!
 </p>
             <p> I am curious about how all things work and I believe all things end.</p>
+            <p>Here&apos;s my resume, I know you were thought about asking for it 😉 - <a href="Albert Tarkaa - CV.pdf" target='_blank' rel="noreferrer">my resume</a></p>
           </div>
         </main>
       </div>
