@@ -6,13 +6,13 @@ const Footer = ({ home }) =>
 {
     return (
         <>
-
-            <footer className={home ? 'footer-index' : 'footer'}>Not all who wander are lost - 🖖🏾
-                {/* <ul className='footer-icons'>
-                    <li><SiTwitter /></li>
-                    <li><SiGithub /></li>
+            {/* <ul className='footer-icons'>
+                    <li></li>
+                    <li></li>
                     <li><GrMail /></li>
                 </ul> */}
+            <footer className='footer-index'>Not all who wander are lost - 🖖🏾
+               
             </footer>
         </>
     );
