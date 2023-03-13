@@ -1,6 +1,5 @@
 import Footer from '../components/Footer';
 import Header from '../components/Header';
-import Link from 'next/link'
 
 const About = () =>
 {
@@ -11,7 +10,7 @@ const About = () =>
       <div className='container'>
         <main className='main'>
           <div className='description'>
-            <p>Hi there! I&apos;m Albert, a software engineer with a passion for creating beautiful, accessibility-compliant, and functional web applications. I have over 5 years of experience in frontend development using ReactJS, NextJS, JavaScript, and TypeScript. I&apos;m currently leading a team of super-talented developers at <Link href='www.tenece.com'>Tenece Professional Services</Link>, where we deliver innovative solutions for clients across various industries.</p>
+            <p>Hi there! I&apos;m Albert, a software engineer with a passion for creating beautiful, accessibility-compliant, and functional web applications. I have over 5 years of experience in frontend development using ReactJS, NextJS, JavaScript, and TypeScript. I&apos;m currently leading a team of super-talented developers at <a href='https://www.tenece.com'>Tenece Professional Services</a>, where we deliver innovative solutions for clients across various industries.</p>
 
             <p>
               I love learning new technologies and sharing my knowledge with others. On my personal website, you can find my portfolio of projects, blog posts on various topics related to web development, and poetry collection that expresses my creative side.</p>
@@ -22,7 +21,7 @@ const About = () =>
             <p>
               Feel free to connect with me if you want to chat about anything related to web development, AI, Big History, Fantasy novels, Christianity, Voluteering, Poetry and basically anything. I&apos;d love to hear from you!
 </p>
-             <p> I am curious about how all things work.</p>
+            <p> I am curious about how all things work and I believe all things end.</p>
           </div>
         </main>
       </div>
