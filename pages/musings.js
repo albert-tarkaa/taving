@@ -1,6 +1,5 @@
 import Footer from '../components/Footer';
 import Header from '../components/Header';
-import styles from '../styles/Musings.module.css';
 
 const Musings = () =>
 {
@@ -8,8 +7,8 @@ const Musings = () =>
         <>
             <Header title='Musings - Poetry and stuff' musings='musings' />
 
-            <div className='container'>
-                <main className={styles.main}>
+            <main className='main'>
+                <div className='description'>
                     <h2>The uncertainties and conversations with fate</h2>
                     <p>#</p>
                     <p>
@@ -29,8 +28,8 @@ const Musings = () =>
                         Enjoying the freedom I so desperately craved
                         It would be beautiful, one last time
 </p>
-                </main>
-            </div>
+                </div>
+            </main>
             {/* <Footer /> */}
         </>
     );
