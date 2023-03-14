@@ -20,7 +20,7 @@ const Musings = ({ data }) =>
                         <>
                             <p key={musing._firstPublishedAt}>#</p>
                             <p style={{ whiteSpace: "pre-line" }}> {parse(`${musing.musings}`)}</p>
-                            <span className='publised'>pulished: {dayjs(musing._firstPublishedAt).format('LLLL')} </span>
+                            <span className='publised'>published: {dayjs(musing._firstPublishedAt).format('LLLL')} </span>
                         </>
                     ))}                    
                 </div>
