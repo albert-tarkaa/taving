@@ -1,0 +1,5 @@
+1. You can take inspiration from this code freely.
+2. Avoid direct copying of the code.
+3. It would be appreciated if you give credit to the author.
+
+There is no complicated license. Please be kind and assist others in learning.
