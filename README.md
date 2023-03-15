@@ -2,7 +2,7 @@
 
 - **Framework**: [Next.js](https://nextjs.org/)
 - **CMS**: [Dato CMS](https://www.datocms.com/)
-- **Deployment**: [Vercel](https://netlify.com)
+- **Deployment**: [Netlify](https://netlify.com)
 - **Styling**: Custom CSS
 
 ## TODO
@@ -28,8 +28,9 @@ Create a `.env` file similar to [`.env.example`](https://github.com/albert-tarka
 Please review the [license](https://github.com/albert-tarkaa/taving/blob/main/LICENSE.txt) and remove all of my personal information (resume, blog posts, images, etc.)
 
 Readme and License inspired by [Lee Robinson](https://leerob.io/)
-[Production]
+
+Production
 [![Netlify Status](https://api.netlify.com/api/v1/badges/88d26732-714d-4840-a240-cb3d5bfe8cdc/deploy-status)](https://app.netlify.com/sites/tavi/deploys)
 
-[Development]
+Development
 [![Netlify Status](https://api.netlify.com/api/v1/badges/44bbfe29-b0ff-4663-931a-233b3916b81c/deploy-status)](https://app.netlify.com/sites/tarkaa-dev/deploys)
