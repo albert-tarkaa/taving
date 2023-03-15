@@ -8,6 +8,14 @@
   font-size: 4rem;
 }
 
+.publised{
+  color: gray;
+  font-size: .8rem;
+  margin-top: -1rem;
+  width: 90vw;
+  line-height: 1.7;
+}
+
 .container {
   display: flex;
   flex-direction: column;

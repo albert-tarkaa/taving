@@ -14,6 +14,7 @@ export default function Home({ title, about, blog, portfolio,musings })
       <h3 className={styles.title}>
         Albert Tarkaa <span className='title-muted'> - Web Developer</span>
       </h3>
+      <p className={styles.publised}>Hi there! I&apos;m Albert, a software engineer currently leading a team of super-talented developers at <a href='https://www.tenece.com'>Tenece Professional Services</a>, where we deliver innovative solutions for clients across various industries.</p>
       <nav className={styles.nav}>
         <ul >
           <NavLink href='/about' active={about}>About</NavLink>
