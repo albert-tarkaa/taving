@@ -12,7 +12,7 @@
   color: gray;
   font-size: .8rem;
   margin-top: -1rem;
-  width: 90vw;
+  width: 58vw;
   line-height: 1.7;
 }
 
@@ -41,6 +41,9 @@
   .container {
     padding: 1rem;
   }
+  .publised{
+  width: 90vw;
+ }
 }
 
 @media screen and (max-width: 576px) {
