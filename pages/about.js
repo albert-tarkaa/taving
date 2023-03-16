@@ -5,7 +5,7 @@ const About = () =>
 {
   return (
     <>
-      <Header title='About' about='about' />
+      <Header title='about' about='about' />
 
       <div className='container'>
         <main className='main'>
