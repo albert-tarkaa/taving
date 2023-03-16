@@ -5,7 +5,7 @@ const Portfolio = () =>
 {
     return (
         <>
-            <Header title='Portfolio' Portfolio='Portfolio' />
+            <Header title='portfolio' Portfolio='portfolio' />
 
             <div className='container'>
                 <main className='main'>

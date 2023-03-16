@@ -11,7 +11,7 @@ const Musings = ({ data }) =>
     console.log(data)
     return (
         <>
-            <Header title='Musings - Poetry and stuff' musings='musings' />
+            <Header title='musings - Poetry and stuff' musings='musings' />
 
             <main className='main'>
                 <div className='description'>
