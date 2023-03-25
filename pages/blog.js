@@ -1,27 +1,60 @@
-import Footer from '../components/Footer';
 import Header from '../components/Header';
+import parse from 'html-react-parser';
+import * as dayjs from 'dayjs';
+var localizedFormat = require('dayjs/plugin/localizedFormat');
+dayjs.extend(localizedFormat);
+import { client } from '../lib/dataClient';
 
-const Blog = () => {
+
+
+const Blog = ({ data }) =>
+{
   return (
     <>
-      <Header title='blog' blog='blog' />
+      <Header title='blog' articles='Blog' />
 
-      <div className='container'>
-        <main className='main'>
-          <blockquote className='description'>
-            {`“I think human consciousness is a tragic misstep in human evolution. We became too self aware; nature
-            created an aspect of nature separate from itself. We are creatures that should not exist by natural law. We
-            are things that labor under the illusion of having a self, a secretion of sensory experience and feeling,
-            programmed with total assurance that we are each somebody, when in fact everybody’s nobody. I think the
-            honorable thing for our species to do is deny our programming, stop reproducing, walk hand in hand into
-            extinction, one last midnight, brothers and sisters opting out of a raw deal.”`}
-          </blockquote>
-          <cite>― Rustin Cohle, True Detective</cite>
-        </main>
-      </div>
-      {/* <Footer/> */}
+      <main className='main'>
+        <div className='description'>
+
+          {data.map(article => (
+            <div key={article._firstPublishedAt}>
+              <span className='publised'>published: {dayjs(article._firstPublishedAt).format('LLLL')} </span>
+              <p style={{ fontSize: "x-large" }}>{article.title}</p>
+              <p style={{ whiteSpace: "pre-line" }}> {parse(`${article.body}`)}</p>
+            </div>
+          ))}
+        </div>
+      </main>
+      {/* <Footer /> */}
     </>
   );
 };
 
 export default Blog;
+
+export async function getStaticProps()
+{
+  const query = ` {
+  allArticles {
+    _firstPublishedAt
+    body
+    id
+    title
+  }
+}`;
+
+
+  const data = await client.request(query);
+  if (!data)
+  {
+    return {
+      notFound: true,
+    };
+  }
+  return {
+    props: {
+      data: data.allArticles,
+    },
+  };
+}
+
