@@ -4,28 +4,30 @@ import * as dayjs from 'dayjs';
 var localizedFormat = require('dayjs/plugin/localizedFormat');
 dayjs.extend(localizedFormat)
 import { client } from '../lib/dataClient';
-
+import Link from 'next/link';
+import Cards from '../components/cards';
+import generateSlug from '../lib/slugs';
 
 
 const Musings = ({ data }) =>
 {
+    const getFirstLine = (text) => text.split('\n')[0];
+
     return (
         <>
             <Header title='musings - Poetry and stuff' musings='musings' />
 
             <main className='main'>
                 <div className='description'>
-                    <h2>The uncertainties and conversations with fate</h2>
+                    {/* <h2>The uncertainties and conversations with fate</h2> */}
+                    
                     {data.map(musing => (
-                        <div key={musing._firstPublishedAt}>
-                            <p>#</p>
-                            <p style={{ whiteSpace: "pre-line" }}> {parse(`${musing.musings}`)}</p>
-                            <span className='publised'>published: {dayjs(musing._firstPublishedAt).format('LLLL')} </span>
-                        </div>
-                    ))}                    
+                        <Link href={`/musings/${musing.id}`} passHref key={musing._firstPublishedAt}>
+                        <Cards {...musing} title={getFirstLine(musing.musings)}/>
+                        </Link>
+                    ))}
                 </div>
             </main>
-            {/* <Footer /> */}
         </>
     );
 };
@@ -38,6 +40,7 @@ export async function getStaticProps()
   allTheUncertaintiesAndConversationsWithFates {
     _firstPublishedAt
     musings
+    id
   }
 }`;
 

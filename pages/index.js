@@ -2,7 +2,7 @@ import { NavLink } from '../components/NavLink';
 import { Meta } from '../components/Meta';
 import styles from '../styles/Index.module.css';
 import Footer from '../components/Footer';
-import { SiTwitter, SiGithub,SiLinkedin } from "react-icons/si";
+import { SiTwitter, SiGithub, SiLinkedin } from "react-icons/si";
 import { GrMail } from "react-icons/gr";
 
 export default function Home({ title, about, blog, portfolio,musings })
@@ -12,13 +12,14 @@ export default function Home({ title, about, blog, portfolio,musings })
     <div className={styles.container}>
       <Meta />
       <h3 className={styles.title}>
-        Albert Tarkaa <span className='title-muted'> - Web Developer</span>
+        Albert Tarkaa <span className='title-muted'> - Software Engineer</span>
       </h3>
-      <p className={styles.publised}>Hi there! I&apos;m Albert, a software engineer currently leading a team of super-talented developers at <a href='https://www.tenece.com'>Tenece Professional Services</a>, where we deliver innovative solutions for clients across various industries.</p>
+      <p className={styles.publised}>
+        I have a passion for creating beautiful, accessibility-compliant, and functional web applications. I have over 5 years of experience in frontend development using ReactJS, NextJS, JavaScript, and TypeScript.</p>
       <nav className={styles.nav}>
         <ul >
           <NavLink href='/about' active={about} className={styles.a}>About</NavLink>
-          <NavLink href='/portfolio' active={portfolio} className={styles.a}>Portfolio</NavLink>
+          {/* <NavLink href='/portfolio' active={portfolio} className={styles.a}>Portfolio</NavLink> */}
           <NavLink href='/blog' active={blog} className={styles.a}>Blog</NavLink>
           <NavLink href='/musings' active={musings} className={styles.a}>Musings - Poetry and stuff</NavLink>
         </ul>

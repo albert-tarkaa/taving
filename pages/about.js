@@ -1,4 +1,3 @@
-import Footer from '../components/Footer';
 import Header from '../components/Header';
 
 const About = () =>
@@ -10,19 +9,24 @@ const About = () =>
       <div className='container'>
         <main className='main'>
           <div className='description'>
-            <p>Hi there! I&apos;m Albert, a software engineer with a passion for creating beautiful, accessibility-compliant, and functional web applications. I have over 5 years of experience in frontend development using ReactJS, NextJS, JavaScript, and TypeScript. I&apos;m currently leading a team of super-talented developers at <a href='https://www.tenece.com'>Tenece Professional Services</a>, where we deliver innovative solutions for clients across various industries.</p>
-
             <p>
-              I love learning new technologies and sharing my knowledge with others. On my personal website, you can find my portfolio of projects, blog posts on various topics related to web development, and poetry collection that expresses my creative side.</p>
-
-            <p>
-              When I&apos;m not coding or reading, I enjoy traveling, movies, and gaming. I also volunteer at Genesys Tech Hub with the Codename: Learnable and CodeVille programs. I&apos;m always open to new opportunities and challenges that can help me grow as a developer and a person.
+              Greetings!<br />
             </p>
             <p>
-              Feel free to connect with me if you want to chat about anything related to web development, AI, Big History, Fantasy novels, Christianity, Voluteering, Poetry and basically anything. I&apos;d love to hear from you!
+              I&apos;m Albert, a dedicated software engineer who takes pride in crafting elegant, accessible, and highly functional web applications. With over 5 years of experience in frontend development, utilizing ReactJS, NextJS, JavaScript, and TypeScript, I lead a team of exceptional developers at <a href='https://www.tenece.com'>Tenece Professional Services</a>. Together, we create innovative solutions for diverse industries.</p>
+
+            <p>
+              My passion for continuous learning drives me to explore new technologies and share my knowledge through my personal website. Here, you can explore my impressive portfolio of projects, insightful blog posts on web development and technology in general, and a collection of expressive poetry showcasing my creative side.
+            </p>
+
+            <p>
+              Beyond coding and reading, I find joy in traveling, watching movies, and gaming. I actively volunteer at Genesys Tech Hub with programs like Codename: Learnable and CodeVille, where I contribute to nurturing future talents.
+            </p>
+            <p>
+              Always open to exciting challenges, I&apos;m eager to embrace opportunities that fuel my growth as a developer and an individual. If you&apos;re interested in discussing web development, AI, Big History, Fantasy novels, Christianity and volunteering for tech, children or education, I&apos;d be delighted to connect with you!
 </p>
-            <p> I am curious about how all things work and I believe all things end.</p>
-            <p>Here&apos;s my resume, I know you thought about asking for it 😉 - <a href="Albert Tarkaa - CV.pdf" target='_blank' rel="noreferrer">my resume</a></p>
+            <p> My curiosity drives me to understand how all things work, while my belief holds that all things end.</p>
+            <p>To learn more about my qualifications, here&apos;s <a href="Albert Tarkaa - resume.pdf" target='_blank' rel="noreferrer"> my resume</a></p>
           </div>
         </main>
       </div>

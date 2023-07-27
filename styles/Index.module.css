@@ -6,14 +6,16 @@
 .title {
   padding: 1rem 0;
   font-size: 4rem;
+  font-family: 'Merriweather', sans-serif;
 }
 
 .publised{
-  color: gray;
-  font-size: .8rem;
+  color: rgb(92, 91, 91);
+  font-size: 1rem;
   margin-top: -1rem;
-  width: 65vw;
+  width: 68vw;
   line-height: 1.7;
+  text-align: justify;
 }
 
 .container {
