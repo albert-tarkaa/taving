@@ -1,7 +1,7 @@
 import Header from '../components/Header';
 import { client } from '../lib/dataClient';
 import Link from 'next/link'
-import Cards from '../components/cards';
+import Cards from '../components/Cards';
 
 const Blog = ({ data }) =>
 {

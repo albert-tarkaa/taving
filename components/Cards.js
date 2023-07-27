@@ -12,7 +12,6 @@ const Cards = (item,title) =>
         <div key={item._firstPublishedAt}>
           <span className='publised'>published: {dayjs(item._firstPublishedAt).format('LLLL')} </span>
           <p style={{ fontSize: "x-large" }}>{item.title || title}</p>
-          {/* <p style={{ whiteSpace: "pre-line" }}> {parse(`${item.body}`)}</p> */}
         </div>
       </div>
     </div>
