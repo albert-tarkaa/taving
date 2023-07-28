@@ -8,7 +8,7 @@ const Portfolio = () =>
             <Header title='portfolio' portfolio='portfolio' />
             <div className='container'>
                 <main className='main'>
-                  <Cards />
+                  {/* <Cards /> */}
                 </main>
             </div>
             
