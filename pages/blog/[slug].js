@@ -2,7 +2,6 @@ import React from 'react';
 import Header from '../../components/Header';
 import { useRouter } from 'next/router';
 import { client } from '../../lib/dataClient';
-
 import parse from 'html-react-parser';
 import * as dayjs from 'dayjs';
 var localizedFormat = require('dayjs/plugin/localizedFormat');
@@ -11,7 +10,6 @@ dayjs.extend(localizedFormat);
 const BlogItem = (item) =>
 {
     const router = useRouter();
-    const { slug } = router.query
     const { article } = item.data;
     return (
         <>
@@ -36,10 +34,10 @@ export default BlogItem;
 export async function getStaticPaths()
 {
     const query = ` {
-  allArticles {
-    slug
-  }
-}`;
+    allArticles {
+        slug
+     }
+    }`;
 
 
     const data = await client.request(query);
@@ -49,9 +47,11 @@ export async function getStaticPaths()
             notFound: true,
         };
     }
+    
     const paths = data.allArticles.map((dataItem) => ({
         params: { slug: dataItem.slug }, 
     }));
+
     return {
         paths,
         fallback: true, 

@@ -6,7 +6,6 @@ const Portfolio = () =>
     return (
         <>
             <Header title='portfolio' portfolio='portfolio' />
-
             <div className='container'>
                 <main className='main'>
                   <Cards />

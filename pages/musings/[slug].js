@@ -11,7 +11,6 @@ dayjs.extend(localizedFormat);
 const MusingsItem = (item) =>
 {
     const router = useRouter();
-    const { slug } = router.query;
     const musing = item.data.allTheUncertaintiesAndConversationsWithFates[0];
     return (
         <>
