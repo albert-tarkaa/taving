@@ -10,7 +10,6 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
-    "@netlify/plugin-nextjs": "^4.39.1",
     "dayjs": "^1.11.7",
     "graphql-request": "^5.2.0",
     "html-react-parser": "^3.0.12",
