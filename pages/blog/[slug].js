@@ -47,14 +47,14 @@ export async function getStaticPaths()
             notFound: true,
         };
     }
-    
+
     const paths = data.allArticles.map((dataItem) => ({
         params: { slug: dataItem.slug }, 
     }));
 
     return {
         paths,
-        fallback: true, 
+        fallback: false, 
     };
 }
 
