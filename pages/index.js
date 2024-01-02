@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 import { SiTwitter, SiGithub, SiLinkedin } from "react-icons/si";
 import { GrMail } from "react-icons/gr";
 
-export default function Home({ title, about, blog, portfolio,musings })
+export default function Home({ title, about, blog, musings, projects })
 {
   const home='home'
   return (
@@ -20,8 +20,10 @@ export default function Home({ title, about, blog, portfolio,musings })
         <ul >
           <NavLink href='/about' active={about} className={styles.a}>About</NavLink>
           {/* <NavLink href='/portfolio' active={portfolio} className={styles.a}>Portfolio</NavLink> */}
+          <NavLink href='/projects' active={projects} className={styles.a}>Projects</NavLink>
           <NavLink href='/blog' active={blog} className={styles.a}>Blog</NavLink>
           <NavLink href='/musings' active={musings} className={styles.a}>Musings - Poetry and stuff</NavLink>
+          
         </ul>
       </nav>
       <div className="media-links">

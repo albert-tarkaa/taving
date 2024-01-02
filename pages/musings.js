@@ -6,7 +6,6 @@ dayjs.extend(localizedFormat)
 import { client } from '../lib/dataClient';
 import Link from 'next/link';
 import Cards from '../components/Cards';
-import generateSlug from '../lib/slugs';
 
 
 const Musings = ({ data }) =>
