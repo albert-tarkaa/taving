@@ -22,7 +22,7 @@ export default function Home({ title, about, blog, musings, projects })
           {/* <NavLink href='/portfolio' active={portfolio} className={styles.a}>Portfolio</NavLink> */}
           <NavLink href='/projects' active={projects} className={styles.a}>Projects</NavLink>
           <NavLink href='/blog' active={blog} className={styles.a}>Blog</NavLink>
-          <NavLink href='/musings' active={musings} className={styles.a}>Musings - Poetry and stuff</NavLink>
+          <NavLink href='/musings' active={musings} className={styles.a}>Musings and scribblings</NavLink>
           
         </ul>
       </nav>

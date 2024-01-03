@@ -1,0 +1,68 @@
+.userCards{
+    display:flex;
+    justify-content:center;
+    margin:2rem 0;
+    flex-wrap:wrap;
+    gap:1rem;
+}
+
+.card{
+    height:300px;
+    width:440px;
+    padding:1rem;
+    background-color: #FBFCFF;
+    border-radius:5px;
+}
+
+.card:hover{
+    box-shadow: 1px 0px 10px 1px #E2E9F9;
+}
+
+.cardDetails{
+    display:flex;
+}
+
+.cardInfo{
+    font-size:.5rem;
+    padding:1rem;
+}
+
+.cardImg{
+    width:30%;
+}
+
+/* img{
+    width:90%;
+    height:60px;
+    border-radius:20px;
+    clip-path:circle();
+} */
+
+.cardName{
+    font-size:.8rem;
+    font-weight:900;
+    color:#373C47;
+}
+
+.cardCity{
+    font-size:.6rem;
+    font-weight:900;
+    color:#373C47;
+    line-height:1;
+    margin:.2rem;
+}
+
+.tags{
+    border-radius:25px;
+    font-size:.5rem;
+    border: solid #373C47 1px;
+    padding:.2rem;
+    margin: .2rem;
+    font-weight:700;
+}
+
+@media (max-width: 680px) {
+  #nav-list{
+    margin:1rem 0;
+  }
+}

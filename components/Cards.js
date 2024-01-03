@@ -1,5 +1,4 @@
 import React from 'react';
-import parse from 'html-react-parser';
 import * as dayjs from 'dayjs';
 var localizedFormat = require('dayjs/plugin/localizedFormat');
 dayjs.extend(localizedFormat);
