@@ -13,7 +13,7 @@ const About = () =>
               Greetings!<br />
             </p>
             <p>
-              I&apos;m Albert, a dedicated software engineer who takes pride in crafting elegant, accessible, and highly functional web applications. With over 5 years of experience in frontend development, utilizing ReactJS, NextJS, JavaScript, and TypeScript, I lead a team of exceptional developers at <a href='https://www.tenece.com'>Tenece Professional Services</a>. Together, we create innovative solutions for diverse industries.</p>
+              I&apos;m Albert, a dedicated software engineer who takes pride in crafting elegant, accessible, and highly functional web applications. With about 4 years of experience in frontend development, utilizing ReactJS, NextJS, JavaScript, and TypeScript, I lead a team of exceptional developers at <a href='https://www.tenece.com'>Tenece Professional Services</a>. Together, we create innovative solutions for diverse industries.</p>
 
             <p>
               My passion for continuous learning drives me to explore new technologies and share my knowledge through my personal website. Here, you can explore my impressive portfolio of projects, insightful blog posts on web development and technology in general, and a collection of expressive poetry showcasing my creative side.
