@@ -15,7 +15,7 @@ export default function Home({ title, about, blog, musings, projects })
         Albert Tarkaa <span className='title-muted'> - Software Engineer</span>
       </h3>
       <p className={styles.publised}>
-        I have a passion for creating beautiful, accessibility-compliant, and functional web applications. I have over 5 years of experience in frontend development using ReactJS, NextJS, JavaScript, and TypeScript.</p>
+        I have a passion for creating beautiful, accessibility-compliant, and functional web applications. I have about 4 years of experience in frontend development using ReactJS, NextJS, JavaScript, and TypeScript.</p>
       <nav className={styles.nav}>
         <ul >
           <NavLink href='/about' active={about} className={styles.a}>About</NavLink>
