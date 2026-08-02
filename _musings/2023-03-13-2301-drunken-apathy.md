@@ -11,8 +11,7 @@ He looked up at me with drunken apathy
 "It's you, again", he said
 "You don't care it's happening again"? I asked
 
-The last time, we were wary
-we liked our certainty and with a hubris unmatched, we thought we knew it all.
-This time...this time, it gave no warning
+The last time, we were wary, we liked our certainty and with a hubris unmatched, we thought we knew it all.
+This time...this time, it gave no warning.
 
-it demanded all with the poise of one that cannot be refused and we said yes, again
+It demanded all, with the poise of one that cannot be refused and we said yes, again
