@@ -22,13 +22,6 @@
     module at Leeds Beckett University.
   tags: ["C#"]
 
-- name: Learnable testimonial plugin
-  url: https://github.com/albert-tarkaa/learnable-testimonial-plugin
-  description: >-
-    A small plugin built while volunteering with Genesys Tech Hub's
-    Codename: Learnable programme.
-  tags: ["CSS"]
-
 - name: taving, this site
   url: https://github.com/albert-tarkaa/taving
   description: >-
