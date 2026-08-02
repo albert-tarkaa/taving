@@ -1,0 +1,22 @@
+---
+layout: page
+title: Writing
+permalink: /blog/
+---
+
+<h1>Writing</h1>
+<p class="sub">Longer pieces on building software, and on how things get built generally.</p>
+
+<div class="entry-list">
+  {%- for post in site.posts %}
+  <a class="entry" href="{{ post.url | relative_url }}">
+    <div class="entry-title">{{ post.title }}</div>
+    <div class="entry-meta">{{ post.date | date: "%-d %B %Y" }}</div>
+    {%- if post.description %}
+    <div class="entry-excerpt">{{ post.description }}</div>
+    {%- endif %}
+  </a>
+  {%- else %}
+  <p class="empty">No posts published yet.</p>
+  {%- endfor %}
+</div>

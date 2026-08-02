@@ -1,0 +1,59 @@
+# Selected work shown on the homepage, in order.
+# Add or reorder entries here — the numbering is generated.
+
+- name: Qedly
+  url: https://getqedly.com
+  description: >-
+    A self directed, live multi-tenant SaaS platform, built and operated end to end,
+    including billing, background jobs and production monitoring.
+  tags: [".NET 9", "PostgreSQL", "Redis", "Stripe"]
+
+- name: SUPER App
+  url: https://github.com/albert-tarkaa/SUPER-App
+  description: >-
+    A mobile application prototype for Small Urban Park Environments and Residents,
+    built for the Leeds Sustainability Institute as part of an MSc dissertation.
+  tags: ["React Native", "Spring Boot"]
+
+- name: GPL, Graphical Programming Language
+  url: https://github.com/albert-tarkaa/GPL
+  description: >-
+    A graphical programming language built for the Advanced Software Engineering
+    module at Leeds Beckett University.
+  tags: ["C#"]
+
+- name: Learnable testimonial plugin
+  url: https://github.com/albert-tarkaa/learnable-testimonial-plugin
+  description: >-
+    A small plugin built while volunteering with Genesys Tech Hub's
+    Codename: Learnable programme.
+  tags: ["CSS"]
+
+- name: taving, this site
+  url: https://github.com/albert-tarkaa/taving
+  description: >-
+    Personal site, portfolio, blog and poetry collection, source for what
+    you're reading right now.
+  tags: ["Jekyll", "GitHub Pages"]
+
+- name: Genesys Foundation
+  url: https://genesysfoundation.org
+  description: >-
+    The site for a tech education nonprofit I previously volunteered with,
+    covering their Learnable, CodeVille and Upskill programmes.
+  tags: ["WordPress"]
+
+- name: Iconic Signs
+  url: https://iconicsigns.co.uk
+  description: >-
+    A site for a Leeds based signage and branding company, covering their
+    services, portfolio and client enquiries.
+  tags: ["WordPress"]
+
+- name: Alternatives to Violence Project Britain
+  url: https://avpbritain.org.uk
+  description: >-
+    Rebuilt the WordPress platform for this conflict resolution charity using
+    REST APIs and Advanced Custom Fields, improving performance and
+    accessibility. Site visits rose 35 percent.
+  tags: ["WordPress", "REST APIs"]

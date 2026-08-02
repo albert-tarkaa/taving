@@ -1,0 +1,13 @@
+# The "Record" section on the homepage, most recent first.
+
+- role: Production Administrator, Puffin Packaging
+  when: 2025, present
+  detail: >-
+    Data analysis, reporting and root cause investigation in a compliance
+    driven manufacturing environment.
+
+- role: Software Engineer, Tenece Professional Services
+  when: 2020, 2023
+  detail: >-
+    Designed and built enterprise REST APIs in C#, ASP.NET Core and SQL Server.
+    Led the migration of three legacy systems to .NET Core.

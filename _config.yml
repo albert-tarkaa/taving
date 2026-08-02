@@ -1,0 +1,46 @@
+title: Albert Tarkaa
+description: Albert Tarkaa, software engineer. Portfolio, writing, and projects.
+url: https://www.tarkaa.ng
+author: Albert Tarkaa
+email: tarkaa.albert@gmail.com
+
+social:
+  github: https://github.com/albert-tarkaa
+  linkedin: https://linkedin.com/in/albert-tarkaa
+  twitter: https://twitter.com/alberttarkaa
+
+permalink: /blog/:title/
+
+collections:
+  musings:
+    output: true
+    # :title honours a `slug:` in front matter, so filenames can keep their
+    # date prefix for sorting while URLs stay clean.
+    permalink: /musings/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: musings
+    values:
+      layout: musing
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - legacy
+  - README.md
+  - MUSINGS-RECOVERY.md
+  - License.txt
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules

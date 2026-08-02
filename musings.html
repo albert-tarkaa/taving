@@ -1,0 +1,20 @@
+---
+layout: page
+title: Musings and scribblings
+permalink: /musings/
+---
+
+<h1>Musings and scribblings</h1>
+<p class="sub">Short pieces, written in passing. A running, informal record.</p>
+
+<div class="entry-list">
+  {%- assign musings = site.musings | sort: 'date' | reverse -%}
+  {%- for musing in musings %}
+  <a class="entry musing" href="{{ musing.url | relative_url }}">
+    <div class="entry-title">{{ musing.title | default: musing.content | strip_html | strip_newlines | strip | truncate: 160 }}</div>
+    <div class="entry-meta">{{ musing.date | date: "%-d %B %Y" }}</div>
+  </a>
+  {%- else %}
+  <p class="empty">No musings published yet.</p>
+  {%- endfor %}
+</div>

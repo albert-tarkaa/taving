@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<main>
+  <div class="page">
+    <a class="back-link" href="{{ '/musings/' | relative_url }}">&larr; All musings</a>
+    <div class="musing-body">
+      {{ content }}
+    </div>
+    <div class="post-meta" style="margin-top:32px;">{{ page.date | date: "%-d %B %Y" }}</div>
+  </div>
+  <div class="page-footer">
+    {%- include footer.html -%}
+  </div>
+</main>
