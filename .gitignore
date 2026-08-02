@@ -9,9 +9,3 @@ Gemfile.lock
 # misc
 .DS_Store
 *.pem
-
-# legacy Next.js app (kept for reference, not built)
-legacy/node_modules
-legacy/.next
-legacy/out
-legacy/.env*

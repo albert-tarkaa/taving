@@ -1,105 +1,134 @@
 ---
 layout: default
 title: Albert Tarkaa, Software Engineer
-body_class: depth
+body_class: home
 ---
 
-<nav class="depth-ruler" aria-label="Page sections">
-  <div class="line"></div>
-  <button class="depth-mark active" data-target="surface"><span class="tick"></span><span class="label">Surface</span></button>
-  <button class="depth-mark" data-target="signal"><span class="tick"></span><span class="label">Signal</span></button>
-  <button class="depth-mark" data-target="record"><span class="tick"></span><span class="label">Record</span></button>
-  <button class="depth-mark" data-target="build"><span class="tick"></span><span class="label">Build</span></button>
-  <button class="depth-mark" data-target="words"><span class="tick"></span><span class="label">Words</span></button>
-  <button class="depth-mark" data-target="bedrock"><span class="tick"></span><span class="label">Bedrock</span></button>
-</nav>
+<header class="site-nav">
+  <span class="site-wordmark">{{ site.author }}</span>
+  <nav class="site-nav-links" aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="{{ '/blog/' | relative_url }}">Writing</a>
+    <a href="{{ '/musings/' | relative_url }}">Musings</a>
+    <a class="nav-cta" href="{{ '/resume.pdf' | relative_url }}" target="_blank" rel="noopener">R&eacute;sum&eacute;</a>
+  </nav>
+</header>
 
 <main>
 
   <section id="surface">
-    <h1>Albert Tarkaa<br><em>builds and writes.</em></h1>
-    <p class="lede">Software engineer working across C#, .NET and the JavaScript ecosystem. I'm curious about how things are built, from cathedrals to codebases, and I write down what I notice along the way.</p>
-    <div class="nav-row">
-      <a href="#signal">About</a>
-      <a href="#build">Projects</a>
-      <a href="{{ '/blog/' | relative_url }}">Writing</a>
-      <a href="{{ '/musings/' | relative_url }}">Musings</a>
-      <a href="#bedrock">Contact</a>
-    </div>
-    <div class="socials">
-      <a href="{{ site.social.github }}" target="_blank" rel="noopener">GitHub</a>
-      <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="{{ site.social.twitter }}" target="_blank" rel="noopener">Twitter</a>
+    <div class="section-inner">
+      <p class="eyebrow">Software Engineer</p>
+      <h1>Albert Tarkaa<br><em>builds and writes.</em></h1>
+      <p class="lede">Software engineer working across C#, .NET and the JavaScript ecosystem. I'm curious about how things are built, from cathedrals to codebases, and I write down what I notice along the way.</p>
+      <div class="nav-row">
+        <a href="#work">View work</a>
+        <a href="#contact">Say hello</a>
+      </div>
     </div>
   </section>
 
-  <section id="signal">
-    <div class="eyebrow">Signal</div>
-    <h2>A software engineer with a habit of asking why things work.</h2>
-    <p>I've spent the past several years building web applications end to end, from enterprise systems in C# and ASP.NET Core to interfaces in ReactJS, NextJS and TypeScript, with some React Native and Expo on the mobile side. I also work with Dynamics 365 Business Central day to day. I care about accessibility and craft in equal measure. Software that quietly works well is, to me, a kind of good manners.</p>
-    <p>Outside of client work I build my own things. My curiosity tends toward how systems are put together, whether that's a codebase, a cathedral, or the long arc of Big History, and my reading leans toward fantasy novels and the questions that Christianity and deep time both ask about what lasts. I also build websites for small businesses and organisations directly, most recently for Genesys Foundation and Iconic Signs.</p>
-    <p>I previously volunteered with Genesys Tech Hub on programmes like Codename: Learnable and CodeVille, helping newer developers find their footing, and spent almost two years as a volunteer Website Engineer for Alternatives to Violence Project in London, rebuilding their WordPress site.</p>
-    <div class="now">
-      <span class="dot"></span>
-      <span><span class="label mono">Currently</span>building Qedly, a self directed project, and staying open to new engineering roles.</span>
+  <section id="about">
+    <div class="section-inner">
+      <p class="eyebrow">About</p>
+      <h2>A software engineer with a habit of asking why things work.</h2>
+      <div class="prose-stack">
+        <p>I've spent the past several years building web applications end to end, from enterprise systems in C# and ASP.NET Core to interfaces in ReactJS, NextJS and TypeScript, with some React Native and Expo on the mobile side. I also work with Dynamics 365 Business Central day to day. I care about accessibility and craft in equal measure. Software that quietly works well is, to me, a kind of good manners.</p>
+        <p>Outside of client work I build my own things. My curiosity tends toward how systems are put together, whether that's a codebase, a cathedral, or the long arc of Big History, and my reading leans toward fantasy novels and the questions that Christianity and deep time both ask about what lasts. I also build websites for small businesses and organisations directly, most recently for Genesys Foundation and Iconic Signs.</p>
+        <p>I previously volunteered with Genesys Tech Hub on programmes like Codename: Learnable and CodeVille, helping newer developers find their footing, and spent almost two years as a volunteer Website Engineer for Alternatives to Violence Project in London, rebuilding their WordPress site.</p>
+      </div>
+      <div class="now">
+        <span class="dot"></span>
+        <span><span class="label mono">Currently</span>building Qedly, a self directed project, and staying open to new engineering roles.</span>
+      </div>
     </div>
   </section>
 
   <section id="record">
-    <div class="eyebrow">Record</div>
-    <h2>Where I've worked</h2>
-    <div class="record-list">
-      {%- for job in site.data.experience %}
-      <div class="record-item">
-        <div class="record-when mono">{{ job.when }}</div>
-        <div class="record-what">
-          <div class="record-role">{{ job.role }}</div>
-          <div class="record-detail">{{ job.detail }}</div>
+    <div class="section-inner">
+      <p class="eyebrow">Experience</p>
+      <h2>Where I've worked</h2>
+      <div class="record-list">
+        {%- for job in site.data.experience %}
+        <div class="record-item">
+          <div class="record-when mono">{{ job.when }}</div>
+          <div class="record-what">
+            <div class="record-role">{{ job.role }}</div>
+            <div class="record-detail">{{ job.detail }}</div>
+          </div>
         </div>
+        {%- endfor %}
+        <div class="record-end"></div>
       </div>
-      {%- endfor %}
     </div>
   </section>
 
-  <section id="build">
-    <div class="eyebrow">Build</div>
-    <h2>Selected work</h2>
-    <div class="project-list">
-      {%- for project in site.data.projects %}
-      <a class="project" href="{{ project.url }}" target="_blank" rel="noopener">
-        <span class="idx mono">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
-        <span class="title">{{ project.name }}</span>
-        <span class="desc">{{ project.description }}</span>
-        <span class="tags">{% for tag in project.tags %}{{ tag }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</span>
-      </a>
-      {%- endfor %}
+  <section id="work">
+    <div class="section-inner">
+      <p class="eyebrow">Work</p>
+      <h2>Selected work</h2>
+      <div class="project-grid">
+        {%- for project in site.data.projects %}
+        <a class="project-card" href="{{ project.url }}" target="_blank" rel="noopener">
+          <div class="project-card-top">
+            <span class="idx mono">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+            <span class="arrow mono" aria-hidden="true">&#8599;</span>
+          </div>
+          <span class="title">{{ project.name }}</span>
+          <span class="desc">{{ project.description }}</span>
+          <span class="tags mono">{{ project.tags | join: ' &middot; ' }}</span>
+        </a>
+        {%- endfor %}
+      </div>
     </div>
   </section>
 
   <section id="words">
-    <div class="eyebrow">Words</div>
-    <h2>Musings and scribblings</h2>
-    <p class="sub">Short pieces, written in passing. A running, informal record.</p>
-    <div class="lines">
-      {%- assign recent = site.musings | sort: 'date' | reverse -%}
-      {%- for musing in recent limit: 3 %}
-      <a class="line-item" href="{{ musing.url | relative_url }}">
-        {{ musing.title | default: musing.content | strip_html | strip_newlines | strip | truncate: 140 }}
-        <span class="date mono">{{ musing.date | date: "%-d %B %Y" }}</span>
-      </a>
-      {%- else %}
-      <p class="empty">No musings published yet.</p>
-      {%- endfor %}
+    <div class="section-inner">
+      <p class="eyebrow">Words</p>
+      <h2>Musings and scribblings</h2>
+      <p class="sub">Short pieces, written in passing. A running, informal record.</p>
+      <div class="lines">
+        {%- assign recent = site.musings | sort: 'date' | reverse -%}
+        {%- for musing in recent limit: 3 %}
+        <a class="line-item" href="{{ musing.url | relative_url }}">
+          {{ musing.short_title | default: musing.title | default: musing.content | strip_html | strip_newlines | strip | truncate: 140 }}
+          <span class="date mono">{{ musing.date | date: "%-d %B %Y" }}</span>
+        </a>
+        {%- else %}
+        <p class="empty">No musings published yet.</p>
+        {%- endfor %}
+      </div>
+      <a class="words-link" href="{{ '/musings/' | relative_url }}">Read more &rarr;</a>
     </div>
-    <a class="words-link" href="{{ '/musings/' | relative_url }}">Read more &rarr;</a>
   </section>
 
-  <section id="bedrock">
-    <div class="inner">
-      <div class="eyebrow">Bedrock</div>
+  <section id="contact">
+    <div class="section-inner">
+      <p class="eyebrow">Contact</p>
       <h2>Say hello.</h2>
-      <p>Open to conversations about web development, AI, Big History, fantasy novels, and volunteering in tech or education. Also happy to just talk shop.</p>
-      <a class="email mono" href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <p class="contact-intro">Open to conversations about web development, AI, Big History, fantasy novels, and volunteering in tech or education. Also happy to just talk shop.</p>
+
+      <div class="contact-grid">
+        <div>
+          <a class="email mono" href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </div>
+        <form class="contact-form" data-mailto>
+          <label class="visually-hidden" for="contact-name">Your name</label>
+          <input id="contact-name" name="name" type="text" placeholder="Your name" autocomplete="name">
+          <label class="visually-hidden" for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" rows="3" placeholder="Message"></textarea>
+          <button type="submit">Send &rarr;</button>
+        </form>
+      </div>
+
+      <div class="socials">
+        <a href="{{ site.social.github }}" target="_blank" rel="noopener">GitHub</a>
+        <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="{{ site.social.twitter }}" target="_blank" rel="noopener">Twitter</a>
+      </div>
+
       {%- include footer.html -%}
       <div class="oath">Life before death. Strength before weakness. Journey before destination.</div>
     </div>
@@ -108,24 +137,17 @@ body_class: depth
 </main>
 
 <script>
-  const marks = document.querySelectorAll('.depth-mark');
-  const sections = Array.from(marks).map(m => document.getElementById(m.dataset.target));
+  (function () {
+    var form = document.querySelector('[data-mailto]');
+    if (!form) return;
 
-  marks.forEach(m => {
-    m.addEventListener('click', () => {
-      document.getElementById(m.dataset.target).scrollIntoView({ behavior: 'smooth' });
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      var name = form.querySelector('#contact-name').value.trim();
+      var message = form.querySelector('#contact-message').value.trim();
+      var subject = encodeURIComponent('Hello from ' + (name || 'your site'));
+      var body = encodeURIComponent(message);
+      window.location.href = 'mailto:{{ site.email }}?subject=' + subject + '&body=' + body;
     });
-  });
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const mark = document.querySelector(`.depth-mark[data-target="${entry.target.id}"]`);
-        marks.forEach(m => m.classList.remove('active'));
-        if (mark) mark.classList.add('active');
-      }
-    });
-  }, { rootMargin: '-45% 0px -45% 0px', threshold: 0 });
-
-  sections.forEach(s => { if (s) observer.observe(s); });
+  })();
 </script>

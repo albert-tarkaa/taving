@@ -3,7 +3,11 @@ layout: default
 ---
 <main>
   <div class="page">
-    <a class="back-link" href="{{ '/blog/' | relative_url }}">&larr; All writing</a>
+    <div class="crumbs">
+      <a class="back-link" href="{{ '/blog/' | relative_url }}">&larr; All writing</a>
+      <span class="crumb-dot">&middot;</span>
+      <a class="back-link" href="{{ '/' | relative_url }}">Home</a>
+    </div>
     <h1>{{ page.title }}</h1>
     <div class="post-meta">{{ page.date | date: "%-d %B %Y" }}</div>
     <div class="prose">

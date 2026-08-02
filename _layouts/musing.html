@@ -1,15 +1,95 @@
 ---
 layout: default
 ---
-<main>
-  <div class="page">
-    <a class="back-link" href="{{ '/musings/' | relative_url }}">&larr; All musings</a>
+{%- comment -%}
+  Prev/next walk the collection in date order, so "prev" is the older
+  musing and "next" the newer one. Liquid has no index-of, and a negative
+  index would wrap to the end of the array, hence the explicit guards.
+{%- endcomment -%}
+{%- assign ordered = site.musings | sort: 'date' -%}
+{%- assign here = 0 -%}
+{%- for m in ordered -%}
+  {%- if m.url == page.url -%}{%- assign here = forloop.index0 -%}{%- endif -%}
+{%- endfor -%}
+{%- assign last = ordered.size | minus: 1 -%}
+{%- if here > 0 -%}
+  {%- assign back = here | minus: 1 -%}
+  {%- assign prev = ordered[back] -%}
+{%- endif -%}
+{%- if here < last -%}
+  {%- assign ahead = here | plus: 1 -%}
+  {%- assign next = ordered[ahead] -%}
+{%- endif -%}
+{%- assign words = content | number_of_words -%}
+{%- assign reading = words | plus: 100 | divided_by: 200 -%}
+{%- if reading < 1 -%}{%- assign reading = 1 -%}{%- endif -%}
+{%- comment -%}
+  `short_title` is the display title from the design (e.g. "The Quiet").
+  `title` stays as the full opening line so SEO and feeds keep the text
+  they already index. Falls back to `title` where no short one is set.
+{%- endcomment -%}
+{%- assign heading = page.short_title | default: page.title -%}
+{%- assign title_length = heading | size -%}
+
+<main class="musings-shell">
+  <div class="musings-col">
+    <div class="musing-crumbs">
+      <a href="{{ '/musings/' | relative_url }}">&larr; All musings</a>
+      <span class="musing-dot">&middot;</span>
+      <a href="{{ '/' | relative_url }}">Home</a>
+    </div>
+
+    <p class="musings-eyebrow">{{ page.date | date: "%-d %B %Y" }}</p>
+    <h1 class="musings-heading{% if title_length > 44 %} is-long{% endif %}">{{ heading }}</h1>
+
     <div class="musing-body">
       {{ content }}
     </div>
-    <div class="post-meta" style="margin-top:32px;">{{ page.date | date: "%-d %B %Y" }}</div>
-  </div>
-  <div class="page-footer">
-    {%- include footer.html -%}
+
+    <div class="musing-meta">
+      <span>{{ page.date | date: "%-d %B %Y" }}</span>
+      <span class="musing-dot">&middot;</span>
+      <span>{{ reading }} min read</span>
+      <span class="musing-dot">&middot;</span>
+      <button type="button" class="musing-share" data-share>Share</button>
+    </div>
+
+    {%- if prev or next %}
+    <nav class="musing-nav">
+      {%- if prev %}<a class="musing-nav-prev" href="{{ prev.url | relative_url }}">&larr; {{ prev.short_title | default: prev.title | strip_html | strip_newlines | strip | truncate: 60 }}</a>{% endif %}
+      {%- if next %}<a class="musing-nav-next" href="{{ next.url | relative_url }}">{{ next.short_title | default: next.title | strip_html | strip_newlines | strip | truncate: 60 }} &rarr;</a>{% endif %}
+    </nav>
+    {%- endif %}
+
+    <div class="musings-footer">
+      {%- include footer.html -%}
+    </div>
   </div>
 </main>
+
+<script>
+  (function () {
+    var button = document.querySelector('[data-share]');
+    if (!button) return;
+
+    button.addEventListener('click', function () {
+      var revert = function () {
+        window.setTimeout(function () { button.textContent = 'Share'; }, 1500);
+      };
+
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(window.location.href).then(function () {
+          button.textContent = 'Copied';
+          revert();
+        }, function () {
+          button.textContent = 'Copy failed';
+          revert();
+        });
+        return;
+      }
+
+      button.textContent = 'Copied';
+      revert();
+    });
+  })();
+</script>

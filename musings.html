@@ -1,20 +1,37 @@
 ---
-layout: page
-title: Musings and scribblings
+layout: default
+title: Musings
 permalink: /musings/
+body_class: musings-page
 ---
 
-<h1>Musings and scribblings</h1>
-<p class="sub">Short pieces, written in passing. A running, informal record.</p>
+<main class="musings-shell">
+  <div class="musings-col">
+    <div class="musing-crumbs">
+      <a href="{{ '/' | relative_url }}">&larr; Home</a>
+    </div>
 
-<div class="entry-list">
-  {%- assign musings = site.musings | sort: 'date' | reverse -%}
-  {%- for musing in musings %}
-  <a class="entry musing" href="{{ musing.url | relative_url }}">
-    <div class="entry-title">{{ musing.title | default: musing.content | strip_html | strip_newlines | strip | truncate: 160 }}</div>
-    <div class="entry-meta">{{ musing.date | date: "%-d %B %Y" }}</div>
-  </a>
-  {%- else %}
-  <p class="empty">No musings published yet.</p>
-  {%- endfor %}
-</div>
+    <p class="musings-eyebrow">Writing</p>
+    <h1 class="musings-heading">Musings</h1>
+
+    <div class="musing-index">
+      {%- assign musings = site.musings | sort: 'date' | reverse -%}
+      {%- for musing in musings %}
+      {%- assign words = musing.content | number_of_words -%}
+      {%- assign reading = words | plus: 100 | divided_by: 200 -%}
+      {%- if reading < 1 %}{%- assign reading = 1 -%}{%- endif -%}
+      <a class="musing-row" href="{{ musing.url | relative_url }}">
+        <span class="musing-row-title">{{ musing.short_title | default: musing.title | default: musing.content | strip_html | strip_newlines | strip | truncate: 160 }}</span>
+        <span class="musing-row-meta">{{ musing.date | date: "%-d %B %Y" }} &middot; {{ reading }} min read</span>
+      </a>
+      {%- else %}
+      <p class="empty">No musings published yet.</p>
+      {%- endfor %}
+      <div class="musing-index-end"></div>
+    </div>
+
+    <div class="musings-footer">
+      {%- include footer.html -%}
+    </div>
+  </div>
+</main>

@@ -29,6 +29,7 @@ defaults:
       type: musings
     values:
       layout: musing
+      body_class: musings-page
 
 plugins:
   - jekyll-feed
@@ -36,9 +37,7 @@ plugins:
   - jekyll-seo-tag
 
 exclude:
-  - legacy
   - README.md
-  - MUSINGS-RECOVERY.md
   - License.txt
   - Gemfile
   - Gemfile.lock
