@@ -657,9 +657,9 @@ body.musings-page ::selection {
   margin: 0 0 64px;
   text-wrap: pretty;
 }
-/* Imported musings carry their opening line as the title; at 44px those
-   overwhelm the page, so long ones step down a size. */
-.musings-heading.is-long { font-size: 32px; }
+/* The poem page has no heading, so the date eyebrow carries the gap the
+   title used to hold. */
+.musing-date { margin-bottom: 64px; }
 
 .musing-index .musings-heading { margin-bottom: 72px; }
 
@@ -786,7 +786,6 @@ body.musings-page ::selection {
 @media (max-width: 640px) {
   .musings-shell { padding: 64px 24px 48px; }
   .musings-heading { font-size: 34px; }
-  .musings-heading.is-long { font-size: 26px; }
   .musing-body { gap: 44px; }
   .musing-body p { font-size: 24px; }
   .musing-row-title { font-size: 23px; }

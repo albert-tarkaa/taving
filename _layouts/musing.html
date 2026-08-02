@@ -23,13 +23,6 @@ layout: default
 {%- assign words = content | number_of_words -%}
 {%- assign reading = words | plus: 100 | divided_by: 200 -%}
 {%- if reading < 1 -%}{%- assign reading = 1 -%}{%- endif -%}
-{%- comment -%}
-  `short_title` is the display title from the design (e.g. "The Quiet").
-  `title` stays as the full opening line so SEO and feeds keep the text
-  they already index. Falls back to `title` where no short one is set.
-{%- endcomment -%}
-{%- assign heading = page.short_title | default: page.title -%}
-{%- assign title_length = heading | size -%}
 
 <main class="musings-shell">
   <div class="musings-col">
@@ -39,8 +32,12 @@ layout: default
       <a href="{{ '/' | relative_url }}">Home</a>
     </div>
 
-    <p class="musings-eyebrow">{{ page.date | date: "%-d %B %Y" }}</p>
-    <h1 class="musings-heading{% if title_length > 44 %} is-long{% endif %}">{{ heading }}</h1>
+    {%- comment -%}
+      No heading here: the musings open with their first line, so a title
+      above the poem only repeated it. The date carries the page instead,
+      and `title` still drives SEO, feeds and the index.
+    {%- endcomment -%}
+    <p class="musings-eyebrow musing-date">{{ page.date | date: "%-d %B %Y" }}</p>
 
     <div class="musing-body">
       {{ content }}
